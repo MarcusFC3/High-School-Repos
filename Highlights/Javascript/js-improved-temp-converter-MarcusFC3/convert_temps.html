@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <main>
+        <h1>Convert from Fahrenheit to Celsius</h1>
+        <script>
+            //Marcus Jones Jr
+            //Chapter 3 Lab 1
+			 let finished = false;
+            while (!finished){
+                let fahrenheit = parseFloat(window.prompt("Enter Fahrenheit temperature. To exit the program, type \"999\""))
+                if(isNaN(fahrenheit)){
+                    window.alert("Please enter a valid number")
+                } else if(fahrenheit == 999){
+                    finished = true;
+                }
+                else if (fahrenheit < -100 || fahrenheit > 212 ){
+                    window.alert(`You entered ${fahrenheit} \nPlease enter a fahrenheit value ranging from -100 - 212`)
+                }else{
+                    let celsius = (fahrenheit - 32) * (5/9)
+                    document.write(`${fahrenheit.toFixed(1)} F = ${celsius.toFixed(1)} C <br>`)
+                }
+            }
+        </script>
+    </main>
+</body>
+</html>

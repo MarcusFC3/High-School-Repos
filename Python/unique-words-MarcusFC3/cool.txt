@@ -1,0 +1,3 @@
+nice nice nice nice
+nice nice work
+work, there should be 10 unique words in this file

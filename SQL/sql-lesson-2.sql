@@ -1,0 +1,111 @@
+VOCAB:
+Distinct
+Concatenation
+Strings
+Where Clause
+Boolean
+Escape keyword
+Is NULL keyword
+Between keyword
+And keyword
+percent sign
+In keyword
+
+1.
+
+no column can be null in the jobs table
+
+2.
+Salary * 12
+
+3. 
+B  projection
+
+4.
+C  Employee
+
+5.
+A SELCT * FROM employees
+
+6.
+B and A  0-5000
+
+7.
+C  WHERE quantity IS NULL
+
+8.
+SELECT FIRST_NAME + ' ' + LAST_NAME AS "Name", EMAIL
+FROM EMPLOYEES;
+
+9.
+SELECT FIRST_NAME + ' ' + LAST_NAME AS "Full Name", PHONE_NUMBER AS "Phone Number"
+FROM EMPLOYEES;
+
+10.
+SELECT LAST_NAME, SALARY, SALARY * .05 + SALARY AS "Salary with 5% raise"
+FROM EMPLOYEES
+
+11.
+SELECT FIRST_NAME + ' ' + LAST_NAME AS "Full Name", HIRE_DATE AS "Hire Date"
+FROM EMPLOYEES
+<<<<<<< HEAD
+WHERE HIRE_DATE <= '1999-12-31'
+
+=======
+WHERE HIRE_DATE <= 1999-12-31 00:00:00.000 
+>>>>>>> 58cf7369ca018f52de4c6b5323464a8ca78e6b84
+
+12.
+SELECT FIRST_NAME + ' ' + LAST_NAME AS "Full Name", JOB_ID AS "Job ID"
+FROM EMPLOYEES
+WHERE JOB_ID like 'SA_REP'
+
+13.
+SELECT DEPARTMENT_NAME
+FROM DEPARTMENTS
+WHERE DEPARTMENT_ID = 60
+
+14.
+SELECT DEPARTMENT_NAME
+FROM DEPARTMENTS
+WHERE MANAGER_ID IS NULL
+
+15.
+SELECT DEPARTMENT_NAME
+FROM DEPARTMENTS
+WHERE LOCATION_ID != 1700
+
+16.
+SELECT FIRST_NAME + ' ' + LAST_NAME AS "Full Name", SALARY
+FROM EMPLOYEES
+WHERE SALARY between 2000 and 3000
+
+17.
+SELECT FIRST_NAME + ' ' + LAST_NAME AS "Full Name", JOB_ID
+FROM EMPLOYEES
+WHERE JOB_ID like 'SA%'
+
+18.
+SELECT FIRST_NAME + ' ' + LAST_NAME AS "Full Name"
+FROM EMPLOYEES
+WHERE LAST_NAME like '%s'
+
+19.
+SELECT FIRST_NAME + ' ' + LAST_NAME AS "Full Name", MANAGER_ID
+FROM EMPLOYEES
+WHERE MANAGER_ID = 124 or  MANAGER_ID = 149
+
+20.
+SELECT fname, lname, studentno
+FROM students
+WHERE sex like 'F'
+
+21.
+SELECT studentno AS "Student Number"
+FROM students
+WHERE major like 'PE'
+
+22.
+SELECT *
+FROM students
+WHERE sex like 'M'

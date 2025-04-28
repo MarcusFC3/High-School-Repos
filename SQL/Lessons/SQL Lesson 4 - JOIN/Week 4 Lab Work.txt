@@ -1,0 +1,33 @@
+Vocabulary
+
+1) Returns the Cartesian product from two tables.
+2) Performs a join on two tables, retrieves all the rows in the Left table, 
+	even if there is no match in the Right table. It also retrieves all the 
+	rows in the Right table, even if there is no match in the Left table.
+3) A join that returns the unmatched rows as well as matched rows
+4) Performs a join on two tables, retrieves all the rows in the Left table 
+	even if there is no match in the Right table.
+5) Performs a join on two tables, retrieves all the rows
+	in the Right table even if there is no match in the Left table.
+6) A join of two or more tables that returns only matched rows
+
+
+
+SQL
+
+1) Create a cross-join that displays the departmen names and cities from the departments and locations tables.
+2) Create a query that returns the deparment names, along with the address (city, state, and postal code). Use
+	the diagram tool to help you find the necessary tables.
+3) Modify the query from #2. Include the country name.
+4) Return the first name, last name, and department name for all employees including those employees not assigned 
+	to a department.
+5) Return the first name, last name, and department name for all employees including those departments that do not 
+	have an employee assigned to them.
+6) Return the first name, last name, and department name for all employees including those departments that do not 
+	have an employee assigned to them and those employees not assigned to a department.
+7) Display the employee’s last name and employee number along with the manager’s last name and manager number. 
+	Label the columns: Employee, Emp#, Manager, and Mgr#, respectively.
+8)	Modify question 7 to display all employees and their managers, even if the employee does not have a manager. 
+	Order the list alphabetically by the last name of the employee.
+9) Display the names and hire dates for all employees who were hired before their managers, along with their managers’
+	names and hire dates. Label the columns Employee, Emp Hired, Manager and Mgr Hired, respectively.

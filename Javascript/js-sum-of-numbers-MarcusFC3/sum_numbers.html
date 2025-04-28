@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sum of Numbers</title>
+</head>
+
+<body>
+    <main>
+        <h1>Sum of Numbers</h1>
+        <script>
+            //Marcus Jones Jr.
+            //Chapter 3 Lab 2
+            do {
+                let topNumber;
+                do {
+                    topNumber = parseInt(window.prompt("enter any top number to sum \nfrom 1-100"))
+                    if (isNaN(topNumber)) {
+                        window.alert("Please enter a number between 1 - 100")
+                    }
+                } while (isNaN(topNumber))
+                let sum = 0
+                for (let i = 1; i <= topNumber; i++) {
+                    sum += i;
+                }
+                document.write(`The sum of the numbers from 1 through ${topNumber} is ${sum} <br>`)
+                
+            } while (window.prompt("Do another sum?") == "y")
+
+        </script>
+    </main>
+</body>
+
+</html>

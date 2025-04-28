@@ -1,0 +1,80 @@
+--Vocalbulary--
+1) Inverts the value of the condition
+2) Both conditions must be true for a record to be selected
+3) Rules that determine the order in which expressions are evaluat-ed and calculated
+4) Either condition can be true for a record to be selected
+5) Orders the rows in ascending order (the default order); A-Z
+6) Orders the rows in descending order: Z-A
+7) To arrange according to class, kind, or size
+
+
+--SQL-- *Be specific! No astericks!
+1) Display the names of all employees with "e" and "i" in their last name.
+2) Display the names of all employees who have a salary greater than 6000 and do NOT work in department 80.
+3) Display all employees whose last names start with “D” and have “a” and “e” anywhere in their last name.
+4)	Who am I? I was hired after May 1998 but before June of 1999. My salary is less than $8000 per month, 
+	and I have an “en” in my last name.
+5) What's my email address? Because I have been working for Oracle since the beginning of 1996, I make more 
+	than $9000 per month. Because I make so much money, I don't get a commission.
+6) Create a query that will return all job titles and their job ID's sorted by the job title.
+7) Create a query which will disply the employee names for each department, sorted by the department in 
+	descending order and then by the last name of the employee in ascending order.
+	
+
+--General Questions--
+
+1) Which list of operators is in the correct order from highest precedence to lowest precedence?
+a. AND, NOT, OR
+b. NOT, OR, AND
+c. NOT, AND, OR
+
+2) Limiting values with the WHERE clause is an example of:
+a. Projection
+b. Ordering
+c. Joining
+d. Grouping
+e. Selection
+
+3) You want to sort your CD collection by title, and then by artist. This can be accomplished using:
+a. WHERE
+b. SELECT
+c. ORDER BY
+d. DISTINCT
+
+4) Which of the following are true?
+a. Multiplication and division take priority over addition.
+b. Operators of the same priority are evaluated from left to right.
+c. Parentheses can be used to override the rules of precedence.
+d. None of the above are true.
+
+5) The following query was written:
+	SELECT DISTINCT last_name
+	FROM students
+	
+a. To select all the outstanding students
+b. To choose last names that are duplicates
+c. To select last names without duplicates
+d. To select all last names
+
+
+6)Examine the following query:
+	SELECT last_name, job_id, salary
+	FROM employees
+	WHERE job_id = 'SA_REP' OR job_id = 'AD_PRES' AND salary >15000;
+	
+Which results could not have been returned from this query?
+a. Joe Everyone, sales representative, salary 15000
+b. Jane Hendricks, sales manager, salary 15500
+c. Arnie Smithers, administration president, 20000
+d. Jordan Lim, sales representative, salary 14000
+
+
+7)
+	SELECT prefix
+	FROM phone
+	WHERE prefix BETWEEN 360 AND 425
+		OR prefix IN (206,253,625)
+		AND prefix BETWEEN 315 AND 620;
+		
+Which of the following values could be returned?
+625, 902, 410, 499
